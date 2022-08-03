@@ -1,0 +1,64 @@
+.sky-image {
+    width: 100%;
+}
+.sky-box {
+    width: 100%;
+    position: relative;
+}
+.sun-image {
+    width: 300px;
+    position: absolute;
+    top: 55%;
+    left: 55%;
+    /* transform: translate(-50%, -50%); */
+    animation: sunrotation 5s linear infinite alternate;
+}
+
+@keyframes sunrotation {
+    0%  {transform: translate(-50%, -50%) rotate(0deg);}
+    25% {transform: translate(-50%, -50%) rotate(100deg);}
+    50% {transform: translate(-50%, -50%) rotate( 200deg);}
+    75% {transform: translate(-50%, -50%) rotate(300deg);}
+    100% {transform: translate(-50%, -50%) rotate(400deg);}
+}
+
+.birds-image {
+    width: 400px;
+    position: absolute;
+    top: 20%;
+    left:0;
+    animation: mybirds 7s linear infinite;
+    z-index: 30;
+}
+
+@keyframes mybirds {
+    0% {left:0%; top:20%;}
+    50% {left: 50%; top: 0%;}
+    100% { left:70%; top:10%;}
+}
+
+
+.plaine-image {
+    width: 300px;
+    top: 50%;
+    right: 0px;
+    position: absolute;
+    animation: myplaine 7s linear infinite;
+    transition: all 3s;
+}
+
+@keyframes myplaine {
+    /* 0% {top: 15%; right:0}
+    30% {top: 15%; right:30%; transform: rotate(45deg);}
+    60% {top: 15%; right:60%;}
+    100% {top: 15%; right:100%;} */
+    from {top: 50%; right:0;}
+    to {top: 0%; right:100%; transform: rotate(30deg);}
+}
+.plaine-image:hover {
+    width: 400px;
+}
+
+
+
+
