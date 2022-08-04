@@ -27,7 +27,7 @@
     position: absolute;
     top: 20%;
     left:0;
-    animation: mybirds 7s linear infinite;
+    animation: mybirds 15s linear infinite;
     z-index: 30;
 }
 
